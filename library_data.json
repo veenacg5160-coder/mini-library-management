@@ -1,0 +1,42 @@
+{
+    "books": [
+        {
+            "id": 101,
+            "title": "The Alchemist",
+            "author": "Paulo Coelho",
+            "available": true,
+            "borrower": null,
+            "borrow_date": null,
+            "due_date": null
+        },
+        {
+            "id": 102,
+            "title": "Harry Potter and the Philosopher's Stone",
+            "author": "J.K. Rowling",
+            "available": true,
+            "borrower": null,
+            "borrow_date": null,
+            "due_date": null
+        },
+        {
+            "id": 103,
+            "title": "Pride & Prejudice",
+            "author": "Jane Austen",
+            "available": true,
+            "borrower": null,
+            "borrow_date": null,
+            "due_date": null
+        }
+    ],
+    "borrowing_records": [
+        {
+            "book_id": 103,
+            "book_title": "Pride & Prejudice",
+            "borrower": "Veena",
+            "borrow_date": "2026-09-19",
+            "due_date": "2026-09-26",
+            "return_date": "2026-09-19",
+            "overdue": false
+        }
+    ]
+}

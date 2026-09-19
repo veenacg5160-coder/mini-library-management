@@ -1,0 +1,8 @@
+Book ID: 103
+Book: Pride & Prejudice
+Borrower: Veena
+Borrow Date: 2026-09-19
+Due Date: 2026-09-26
+Return Date: 2026-09-19
+Overdue: False
+-----------------------------

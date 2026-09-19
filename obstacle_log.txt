@@ -1,0 +1,39 @@
+MINI LIBRARY MANAGEMENT SYSTEM
+OBSTACLE LOG
+
+1. 
+
+Problem:
+Initially, the books and borrowing records were stored only in Python lists and dictionaries. When the program was closed and started again, the previous changes were lost.
+
+What I learned:
+Data stored only in program memory exists only while that particular program execution is running.
+
+Solution:
+I added persistent storage using a JSON file named 'library_data.json'. The program loads the saved data when it starts and saves changes whenever library data is modified.
+
+
+2.
+
+Problem:
+When a borrowed book was returned, its current borrower and borrowing information needed to be cleared so that the book could become available again. However, the previous borrowing activity still needed to remain in the borrowing history.
+
+What I learned:
+The current state of a book and its borrowing history are two different types of information.
+
+Solution:
+I used a separate 'borrowing_records' list to maintain the history of borrowing activities. The book's current status is stored in the 'books' list, while completed borrowing transactions remain in 'borrowing_records'.
+
+
+3.
+
+Problem:
+The program uses Python 'date' objects for borrow dates, due dates, and return dates. These objects cannot be directly stored using JSON.
+
+What I learned:
+JSON supports basic data types such as strings, numbers, lists, dictionaries, booleans, and null values, but Python 'date' objects need to be converted before storing them.
+
+Solution:
+Before saving data, the date values are converted to strings. When the program starts, the stored strings are converted back into Python 'date' objects using date.fromisoformat().
+
+
