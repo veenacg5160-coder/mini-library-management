@@ -1,4 +1,4 @@
-#Mini Library Management System
+# Mini Library Management System
 
 A simple Python-based library management system developed for the LF 2026 Mini Library Management System Challenge.
 
